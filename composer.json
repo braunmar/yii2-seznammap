@@ -1,0 +1,33 @@
+{
+  "name": "braunmar/yii2-seznammap",
+  "description": "Yii2 seznammap extension for easy mapy.seznam application.",
+  "keywords": [
+    "braunmar",
+    "yii2",
+    "seznammap"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "homepage": "https://github.com/braunmar/yii2-seznammap",
+  "support": {
+    "issues": "https://github.com/braunmar/yii2-seznammap/issues",
+    "source": "https://github.com/braunmar/yii2-seznammap"
+  },
+  "authors": [
+    {
+      "name": "Marek Braun",
+      "email": "marra.braun@gmail.com",
+      "homepage": "http://www.braunmar.cz/"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "braunmar/yii2-braunmar-base": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "braunmar\\yii\\seznammap\\": "src/"
+    }
+  }
+}

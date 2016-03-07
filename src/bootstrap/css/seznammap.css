@@ -1,0 +1,20 @@
+/**
+ * @author Marek Braun <marra.braun@gmail.com>
+ * @package braunmar/yii2-seznammap
+ * @see https://github.com/braunmar/yii2-seznammap
+ */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.smap img {
+    max-width: initial !important;
+    max-height: initial !important;
+}
+.smap {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
