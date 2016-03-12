@@ -4,12 +4,12 @@
  * @see https://github.com/braunmar/yii2-seznammap
  */
 (function () {
-    $.fn.seznamMap = function (options) {
+    $.fn.seznamMap = function () {
         
         return this.each(function () {
             var $this = $(this);
-            var $iconClose = $this.find(options.iconClose);
-            var $iconOpen = $this.find(options.iconOpen);
+            var $iconClose = $this.find('[data-id="smap-i-close"]');
+            var $iconOpen = $this.find('[data-id="smap-i-open"]');
             
             $this.on('click', function() {
                 if (!$this.hasClass('active')) {

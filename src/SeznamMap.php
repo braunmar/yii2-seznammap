@@ -34,28 +34,28 @@ class SeznamMap extends Widget
     public $scriptLoad = 'Loader.load();';
     
     /**
-     * Html tag options
+     * HTML tag options
      * @var array
      */
     public $options = [];
     
     /**
      * Use cover (overlay with arrow) which react on click and slide down
-     * @var type 
+     * @var boolean 
      */
     public $cover = true;
     
     /**
-     * Icon class on open (slide down) cober. It used only if cover set to true
+     * Icon class on open (slide down) cover. It used only if cover set to true
      * @var string
      */
-    public $iconOpen = 'fa-angle-down';
+    public $iconOpen = 'fa fa-angle-down';
     
     /**
-     * Icon class on close (slide up) cover- It used only if cover set to true
+     * Icon class on close (slide up) cover. It used only if cover set to true
      * @var string 
      */
-    public $iconClose = 'fa-angle-up';
+    public $iconClose = 'fa fa-angle-up';
     
     /**
      * Run widget
@@ -67,7 +67,7 @@ class SeznamMap extends Widget
         
         $map = Html::tag('div', '', array_replace(['id' => 'map'], $this->options));
         
-        $icons = [Html::tag('i', '', ['class' => 'active fa ' . $this->iconOpen]), Html::tag('i', '', ['class' => 'fa ' . $this->iconClose])];
+        $icons = [Html::tag('i', '', ['class' => 'active ' . $this->iconOpen, 'data-id' => 'smap-i-open']), Html::tag('i', '', ['class' => $this->iconClose, 'data-id' => 'smap-i-close'])];
         
         $cover = Html::tag('div', Html::tag('div', implode("\n", $icons), ['class' => 'smap-cover-icon']), ['class' => 'smap-cover']);
      
@@ -88,7 +88,7 @@ class SeznamMap extends Widget
         
         if ($this->cover) {
             SeznamMapCoverAsset::register($this->view);
-            $this->view->registerJs("$('#{$this->id} .smap-cover').seznamMap({iconClose: '.{$this->iconClose}', iconOpen: '.{$this->iconOpen}'});");
+            $this->view->registerJs("$('#{$this->id} .smap-cover').seznamMap();");
         } else {
             SeznamMapAsset::register($this->view);
         }
