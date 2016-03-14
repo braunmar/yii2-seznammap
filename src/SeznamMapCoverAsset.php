@@ -6,9 +6,9 @@
  * @license https://github.com/braunmar/yii2-seznammap/blob/master/LICENSE
  */
 
-namespace common\components\braunma\seznammap;
+namespace braunmar\yii\seznammap;
 
-use common\components\braunma\base\AssetBundle;
+use braunmar\yii\base\AssetBundle;
 
 /**
  * Seznam map asset

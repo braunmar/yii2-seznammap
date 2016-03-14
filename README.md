@@ -33,4 +33,4 @@ For full documentation see this link at [demos.braunmar.cz/seznammap](http://dem
 Licence
 -------
 
-Class robot loader is under MIT licence. See the [LICENCE](https://github.com/braunmar/yii2-seznammap/blob/master/LICENSE) for details.
+Class robot loader is under MIT licence. See the [LICENSE](https://github.com/braunmar/yii2-seznammap/blob/master/LICENSE) for details.

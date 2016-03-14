@@ -6,7 +6,7 @@
  * @license https://github.com/braunmar/yii2-seznammap/blob/master/LICENSE
  */
 
-namespace common\components\braunma\seznammap;
+namespace braunmar\yii\seznammap;
 
 use braunmar\yii\base\AssetBundle;
 
